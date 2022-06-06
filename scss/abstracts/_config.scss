@@ -7,11 +7,14 @@ $gray: (
 );
 
 $blue-1: #2d9cdb;
+$green-1: #27ae60;
+$red-1: #eb5757;
 
 $font-brand: "Heebo", sans-serif;
 $font-primary: "Poppins", sans-serif;
 
 $site-ml: clamp(1.5rem, 20.28vw + -3.25375rem, 15rem);
+$site-ml-reverse: clamp(1.5rem, -2.25vw + 2.028125rem, 0rem);
 @mixin breakpoint-900 {
   @media (min-width: 56.25em) {
     @content;

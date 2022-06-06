@@ -1,5 +1,9 @@
 @use "../abstracts/config" as *;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $font-primary;
 }
@@ -21,4 +25,15 @@ body {
 [class*="grid"] {
   display: grid;
   gap: 1rem;
+}
+
+.bg-blue {
+  background-color: $blue-1;
+}
+.bg-green {
+  background-color: $green-1;
+}
+
+.bg-red {
+  background-color: $red-1;
 }
