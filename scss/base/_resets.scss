@@ -1,0 +1,32 @@
+<<<<<<< HEAD
+=======
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+>>>>>>> 1bd16bd (:pencil: Minor changes)
