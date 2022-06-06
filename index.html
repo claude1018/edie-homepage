@@ -16,9 +16,234 @@
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@500;600;700&family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
+      integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="icon" type="image/png" href="./app/images/devchallenges.png" />
     <link rel="stylesheet" type="text/css" href="./app/css/main.css" />
     <title>Edie Homepage</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <a class="header__brand" href="#home">Edie</a>
+      <div id="toggle-menu" class="nav-menu">
+        <span class="hamburger"></span>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#intro" class="header__link">Home</a>
+          </li>
+          <li class="header__item">
+            <a href="#services" class="header__link">Services</a>
+          </li>
+          <li class="header__item">
+            <a href="#samples" class="header__link">Our Works</a>
+          </li>
+          <li class="header__item">
+            <a href="#testimonials" class="header__link">Clients</a>
+          </li>
+          <li class="header__item">
+            <a href="#contact" class="header__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container--default">
+      <section class="intro" id="intro">
+        <small class="intro__message">Unhappy with your website?</small>
+        <h2 class="intro__title">We create beautiful and fast web services</h2>
+        <figure class="intro__hero">
+          <img src="app/images/heroImage.jpg" alt="intro" class="intro__img" />
+        </figure>
+        <h2 class="intro__title">Story, emotion and purpose</h2>
+        <p class="intro__paragraph">
+          We help transform your ideas into real world applications that will
+          outperform your toughest competition and help you achieve your
+          strategic goals in short period of time.
+        </p>
+      </section>
+      <form class="form container" action="" class="form">
+        <p class="form__paragraph">Want us to contact you?</p>
+        <div class="form__item">
+          <input type="email" placeholder="Email" class="form__input" />
+          <button type="submit" class="form__submit">Join</button>
+        </div>
+      </form>
+      <section id="services" class="services container--medium">
+        <h2 class="services__title services__title--big">
+          We offer high demand services
+        </h2>
+        <ul class="services__list grid-services">
+          <li class="services__item">
+            <span class="services__icon bg-blue">edit</span>
+            <h3 class="services__title services__item--small">UI/UX Design</h3>
+            <p class="services__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <a class="services__button" href="">Get started</a>
+          </li>
+          <li class="services__item">
+            <span class="services__icon bg-green">code</span>
+            <h3 class="services__title services__item--small">Front End</h3>
+            <p class="services__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <a class="services__button" href="">Get started</a>
+          </li>
+          <li class="services__item">
+            <span class="services__icon bg-red">storage</span>
+            <h3 class="services__title services__item--small">Back End</h3>
+            <p class="services__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <a class="services__button" href="">Get started</a>
+          </li>
+        </ul>
+      </section>
+      <section id="samples" class="container--medium samples">
+        <h2 class="samples__title">Good design means good business</h2>
+        <ul class="samples__list grid-samples">
+          <li class="samples__item">
+            <figure>
+              <img
+                class="samples__img"
+                src="./app/images/smarthome.jpg"
+                alt="smarthome app"
+              />
+            </figure>
+            <small class="samples__category">Full stack application</small>
+            <strong class="samples__name">Smart home dashboard</strong>
+          </li>
+          <li class="samples__item">
+            <figure>
+              <img
+                class="samples__img"
+                src="./app/images/onboard.png"
+                alt="onboard app"
+              />
+            </figure>
+            <small class="samples__category"> UX/UI design </small>
+            <strong class="samples__name">Onboard application</strong>
+          </li>
+          <li class="samples__item">
+            <figure>
+              <img
+                class="samples__img"
+                src="./app/images/booking.png"
+                alt="booking app"
+              />
+            </figure>
+            <small class="samples__category">Mobile application</small>
+            <strong class="samples__name">Booking system</strong>
+          </li>
+          <li class="samples__item">
+            <figure>
+              <img
+                class="samples__img"
+                src="./app/images/juice-product.png"
+                alt="juice product app"
+              />
+            </figure>
+            <small class="samples__category">Front End applicati on</small>
+            <strong class="samples__name">Juice product homepage</strong>
+          </li>
+        </ul>
+        <a class="samples__more" href="#more-sample">see more</a>
+      </section>
+      <div class="container--medium team">
+        <section id="team" class="team__wrapper">
+          <small class="team__message">Meet the team</small>
+          <h2 class="team__title">We are chilled and a laidback team</h2>
+          <p class="team__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </section>
+        <div class="team__wrapper">
+          <div class="team__col">
+            <img src="./app/images/person3.png" alt="member__avatar" />
+          </div>
+          <div class="team__col">
+            <img src="./app/images/person1.png" alt="member__avatar" />
+            <img src="./app/images/person2.png" alt="member__avatar" />
+          </div>
+        </div>
+      </div>
+      <section id="testimonials" class="container--medium testimonials">
+        <h2 class="testimonials__testimony">
+          “Fast and outstanding resutls. Edie understands their customer’s
+          needs. They have a young and talented team.”
+        </h2>
+        <div class="testimonials__profile">
+          <img
+            class="testimonials__avatar"
+            src="./app/images/person4.png"
+            alt="Testimonial avatar"
+          />
+          <div class="testimonials__wrapper">
+            <strong class="testimonials__name">Carlos Tran</strong>
+            <small class="testimonials__position">The Decorate Gatsby</small>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer wrapper container--default">
+        <div class="container--medium grid-footer" id="contact">
+          <nav class="col" aria-label="footer navigation" class="" footer__list>
+            <li class="footer__item">
+              <a href="#intro" class="footer__link">Home</a>
+            </li>
+            <li class="footer__item">
+              <a href="#services" class="footer__link">Services</a>
+            </li>
+            <li class="footer__item">
+              <a href="#samples" class="footer__link">Our Works</a>
+            </li>
+            <li class="footer__item">
+              <a href="#testimonials" class="footer__link">Clients</a>
+            </li>
+            <li class="footer__item">
+              <a href="#contact" class="footer__link">Contact</a>
+            </li>
+          </nav>
+          <div class="col">
+            <a class="footer__brand" href="#home">Edie</a>
+            <div class="footer__icons">
+              <a class="footer__icon" href="#instagram"
+                ><i class="fa-brands fa-instagram-square"></i
+              ></a>
+              <a class="footer__icon" href="#linkedin"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a class="footer__icon" href="#twitter"
+                ><i class="fa-brands fa-twitter-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col">
+            <form class="form container" action="" class="form">
+              <p class="form__paragraph">Want us to contact you?</p>
+              <div class="form__item">
+                <input type="email" placeholder="Email" class="form__input" />
+                <button type="submit" class="form__submit">Join</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="attribution container--medium">
+          created by
+          <a href="https://github.com/claude1018" target="_blank">claude1018</a>
+          - devChallenges.io
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
