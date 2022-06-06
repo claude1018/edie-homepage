@@ -1,14 +1,21 @@
 @use "../abstracts/config" as *;
 
+body {
+  font-family: $font-primary;
+}
+
 .container {
-  margin: 0 auto;
   &--default {
     width: 93%;
     max-width: 1420px;
   }
   &--small {
-    width: 85%;
+    width: 75%;
   }
+}
+
+[class*="container--"] {
+  margin: 0 auto;
 }
 
 [class*="grid"] {
