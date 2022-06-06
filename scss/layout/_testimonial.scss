@@ -1,1 +1,38 @@
 @use "../abstracts/config" as *;
+
+.testimonials {
+  &__testimony {
+    font-size: clamp(1.5rem, 1.13vw + 1.235625rem, 2.25rem);
+    color: map-get($gray, "1");
+    font-weight: 500;
+    line-height: clamp(2.25rem, 1.69vw + 1.85375rem, 3.375rem);
+    width: min(58.5625rem, 100%);
+  }
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__avatar {
+    border-radius: 0.75rem;
+    width: 5.125rem;
+    height: auto;
+  }
+  &__wrapper {
+    & > * {
+      display: block;
+    }
+  }
+  &__name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: map-get($gray, "1");
+    line-height: 2.25rem;
+  }
+  &__position {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: map-get($gray, "3");
+    text-transform: capitalize;
+  }
+}

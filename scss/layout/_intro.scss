@@ -1,1 +1,46 @@
 @use "../abstracts/config" as *;
+
+.intro {
+  padding-top: 2em;
+  &__message {
+    font-size: clamp(0.75rem, 0.56vw + 0.618125rem, 1.125rem);
+    font-weight: 500;
+    line-height: clamp(1.125rem, 0.94vw + 0.905rem, 1.75rem);
+    color: $blue-1;
+  }
+  &__title {
+    margin-top: 0.15em;
+    font-size: clamp(1.5rem, 2.25vw + 0.971875rem, 3rem);
+    line-height: clamp(2.25rem, 3.38vw + 1.4575rem, 4.5rem);
+    font-weight: 500;
+    color: map-get($gray, "1");
+    width: min(34rem, 82%);
+    & ~ & {
+      width: min(28rem, 65%);
+      margin-top: 0.75em;
+    }
+  }
+
+  &__img {
+    width: min(83.25rem, 100%);
+    border-radius: 1.125rem;
+    object-fit: cover;
+  }
+  &__paragraph {
+    font-size: clamp(0.75rem, 0.56vw + 0.618125rem, 1.125rem);
+    color: map-get($gray, "2");
+    line-height: clamp(1.125rem, 0.94vw + 0.905rem, 1.75rem);
+    font-weight: 400;
+    width: min(22rem, 80%);
+  }
+  & + .form {
+    margin-top: 1.75em;
+    width: min(22rem, 80%);
+  }
+  &__message,
+  &__title,
+  &__paragraph,
+  & + .form {
+    margin-left: $site-ml;
+  }
+}

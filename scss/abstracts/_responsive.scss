@@ -1,1 +1,33 @@
 @use "./config" as *;
+
+@include breakpoint-600 {
+  .nav-menu {
+    display: none;
+  }
+  .header {
+    &__nav {
+      position: relative;
+      display: block;
+      padding: 0;
+      box-shadow: none;
+      width: max-content;
+    }
+    &__list {
+      display: flex;
+    }
+    &__item + &__item {
+      margin-left: clamp(1rem, 3.57vw + 0.16375rem, 3.375rem);
+    }
+  }
+}
+
+@include breakpoint-900 {
+  .container {
+    &--default {
+      width: 96%;
+    }
+    &--medium {
+      width: 80%;
+    }
+  }
+}

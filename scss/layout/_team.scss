@@ -1,1 +1,62 @@
 @use "../abstracts/config" as *;
+
+.team {
+  &__wrapper {
+    &:not(& + &) {
+      & > h2,
+      small {
+        margin: 0;
+        padding: 0;
+      }
+      & > p {
+        margin-top: 1em;
+      }
+    }
+    & + & {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+  &__message {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: $red-1;
+  }
+  &__title {
+    font-size: 2.25rem;
+    line-height: 3.375rem;
+    color: map-get($gray, "1");
+    font-weight: 500;
+    width: min(17.5rem, 80%);
+  }
+  &__paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: map-get($gray, "2");
+    font-weight: 400;
+    width: min(17.0625rem, 75%);
+  }
+  .team__col {
+    width: 100%;
+    &:first-child {
+      display: flex;
+      align-items: center;
+    }
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    & > img {
+      border-radius: 1.5rem;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
