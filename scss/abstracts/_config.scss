@@ -1,0 +1,26 @@
+@mixin breakpoint-900 {
+  @media (min-width: 56.25em) {
+    @content;
+  }
+}
+
+@mixin breakpoint-600 {
+  @media (min-width: 37.5em) {
+    @content;
+  }
+}
+
+@mixin pseudo {
+  & {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+}
+
+@mixin element-events {
+  &:focus,
+  &:hover {
+    @content;
+  }
+}

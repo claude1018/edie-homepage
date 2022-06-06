@@ -1,0 +1,21 @@
+{
+  "name": "edie-homepage",
+  "version": "1.0.0",
+  "description": "challenge from devchallenges.io",
+  "main": "index.html",
+  "scripts": {
+    "watch": "gulp watch",
+    "build": "gulp compileStyles"
+  },
+  "author": "claude",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.11",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.14",
+    "sass": "^1.52.2"
+  }
+}
