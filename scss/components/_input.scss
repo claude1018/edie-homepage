@@ -29,5 +29,8 @@
     border-radius: 0.75rem;
     color: #fff;
     padding: 0.65em 1em;
+    @include element-events {
+      opacity: 0.75;
+    }
   }
 }
