@@ -1,0 +1,33 @@
+@use "../abstracts//config" as *;
+
+.form {
+  &__paragraph {
+    font-family: $font-primary;
+    margin-bottom: 0.35em;
+    font-size: clamp(0.75rem, 0.56vw + 0.618125rem, 1.125rem);
+    font-weight: 500;
+    line-height: 1.125rem;
+    color: $blue-1;
+  }
+  &__item {
+    display: flex;
+    padding: 0.35em 0.25em 0.35em 1em;
+    background-color: map-get($gray, "6");
+    border-radius: 0.75rem;
+  }
+  &__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-size: clamp(0.875rem, 0.38vw + 0.786875rem, 1.125rem);
+    font-weight: 500;
+  }
+  &__submit {
+    margin-left: 1em;
+    background: $blue-1;
+    border-radius: 0.75rem;
+    color: #fff;
+    padding: 0.65em 1em;
+  }
+}

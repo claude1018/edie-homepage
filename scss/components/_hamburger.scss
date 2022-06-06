@@ -1,0 +1,37 @@
+@use "../abstracts/config" as *;
+
+.nav-menu {
+  cursor: pointer;
+  padding: 0.25em;
+  &.open .hamburger {
+    visibility: hidden;
+    &::before {
+      transform: rotate(45deg);
+      visibility: visible;
+    }
+    &::after {
+      transform: rotate(-45deg);
+      visibility: visible;
+    }
+  }
+}
+
+.hamburger {
+  display: block;
+  height: 3px;
+  width: 1.8rem;
+  background-color: map-get($gray, "1");
+  border-radius: 4px;
+  transition: transform 0.4s ease-out;
+  &::before,
+  &::after {
+    @include pseudo;
+    @extend .hamburger;
+  }
+  &::before {
+    transform: translateY(-6px);
+  }
+  &::after {
+    transform: translateY(6px);
+  }
+}
