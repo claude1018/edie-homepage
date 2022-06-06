@@ -1,1 +1,17 @@
 @use "../abstracts/config" as *;
+
+.container {
+  margin: 0 auto;
+  &--default {
+    width: 93%;
+    max-width: 1420px;
+  }
+  &--small {
+    width: 85%;
+  }
+}
+
+[class*="grid"] {
+  display: grid;
+  gap: 1rem;
+}
