@@ -14,5 +14,5 @@ function compileStyles() {
 
 exports.compileStyles = compileStyles;
 exports.watch = function () {
-  gulp.watch("./sass/**/*.sass", gulp.series("compileStyles"));
+  gulp.watch("./scss/**/*.scss", gulp.series("compileStyles"));
 };
