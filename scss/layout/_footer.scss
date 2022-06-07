@@ -8,8 +8,10 @@ footer {
   }
   & .form {
     width: min(21.875rem, 100%);
+    align-self: flex-start;
     &__paragraph {
       color: inherit;
+      margin-top: 0.38em;
     }
   }
 }
