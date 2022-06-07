@@ -33,7 +33,7 @@
     font-weight: 400;
     width: min(22rem, 80%);
   }
-  & + .form {
+  & > .form {
     margin-top: 1.75em;
     width: min(22rem, 80%);
   }
