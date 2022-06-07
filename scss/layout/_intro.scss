@@ -40,7 +40,7 @@
   &__message,
   &__title,
   &__paragraph,
-  & + .form {
+  & > .form {
     margin-left: $site-ml;
   }
 }

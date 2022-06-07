@@ -19,10 +19,14 @@
   &__nav {
     position: absolute;
     display: none;
-    top: 80%;
+    top: 90%;
     width: 100%;
     padding: 1.5em 0;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    background: #fff;
+    border-radius: 0.75rem;
+    -webkit-animation: slide-in-top 0.4s ease-in-out both;
+    animation: slide-in-top 0.4s ease-in-out both;
   }
   &__list {
     text-align: center;

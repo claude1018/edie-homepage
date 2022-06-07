@@ -37,3 +37,9 @@ body {
 .bg-red {
   background-color: $red-1;
 }
+
+.grid-main {
+  margin: clamp(0.5rem, 3.76vw + -0.38rem, 3rem) auto
+    clamp(5rem, 13.52vw + 1.83125rem, 14rem) auto;
+  gap: 4em;
+}

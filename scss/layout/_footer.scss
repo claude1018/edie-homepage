@@ -50,7 +50,7 @@ footer {
 }
 
 .grid-footer {
-  padding: clamp(2rem, 3vw + 1.295625rem, 4rem) 0 9em 0;
+  padding: clamp(2rem, 3vw + 1.295625rem, 4rem) 0 7em 0;
   row-gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(min(21.25rem, 100%), 1fr));
 }
@@ -66,5 +66,10 @@ footer {
     color: inherit;
     text-decoration: underline;
     font-weight: 700;
+
+    transition: color 0.3s ease-in-out;
+    @include element-events {
+      color: $blue-1;
+    }
   }
 }
